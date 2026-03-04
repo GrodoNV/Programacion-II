@@ -17,17 +17,17 @@ public class Cronometro {
         return finaliza;
     }
 
-    // c) Método para reiniciar el conteo [cite: 107]
+    // c) Método para reiniciar el conteo 
     public void inicia() {
         this.inicia = System.currentTimeMillis();
     }
 
-    // d) Método para detener el conteo [cite: 108]
+    // d) Método para detener el conteo 
     public void detener() {
         this.finaliza = System.currentTimeMillis();
     }
 
-    // e) Retorna el tiempo que pasó [cite: 109]
+    // e) Retorna el tiempo que pasó 
     public double lapsoDeTiempo() {
         return finaliza - inicia;
     }
