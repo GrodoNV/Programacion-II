@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class TestEcuacion {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        
+        // Solicita al usuario ingresar los valores 
+        System.out.print("Ingrese a, b, c, d, e, f: ");
+        double a = entrada.nextDouble();
+        double b = entrada.nextDouble();
+        double c = entrada.nextDouble();
+        double d = entrada.nextDouble();
+        double e = entrada.nextDouble();
+        double f = entrada.nextDouble();
+
+        // Creamos el objeto con los datos ingresados
+        EcuacionLineal eq = new EcuacionLineal(a, b, c, d, e, f);
+
+        // Si tiene solución, muestra x e y. Si no, avisa 
+        if (eq.tieneSolucion()) {
+            System.out.println("x = " + eq.getX() + ", y = " + eq.getY());
+        } else {
+            System.out.println("La ecuación no tiene solución");
+        }
+    }
+}
