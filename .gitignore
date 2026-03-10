@@ -1,0 +1,28 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Java (Archivos compilados)
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
+
+# Carpetas de sistema
+.DS_Store
+Thumbs.db
+
+# PERMITIR PDF E IMÁGENES (esto asegura que aunque ignoremos out/, no ignoremos estos archivos por error)
+!*.pdf
+!*.png
+!*.jpg
+!*.jpeg
+!*.gif
+!*.svg
+!*.drawio
