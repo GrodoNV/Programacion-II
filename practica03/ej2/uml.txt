@@ -1,0 +1,32 @@
+          +----------------------------------+
+          |              Juego               |
+          +----------------------------------+
+          | # numeroDeVidas: int             |
+          | # record: int                    |
+          | - vidasIniciales: int            |
+          +----------------------------------+
+          | + Juego(vidasIniciales: int)     |
+          | + reiniciaPartida(): void        |
+          | + actualizaRecord(): void        |
+          | + quitaVida(): boolean           |
+          +----------------------------------+
+                          ^
+                          |
+          +----------------------------------+
+          |        JuegoAdivinaNumero        |
+          +----------------------------------+
+          | - numeroAAdivinar: int           |
+          +----------------------------------+
+          | + JuegoAdivinaNumero(vidas: int) |
+          | + validaNumero(n: int): boolean  |
+          | + juega(): void                  |
+          +----------------------------------+
+                   ^                ^
+                   |                |
+          +--------+---------+    +---------+----------+
+          |  JuegoAdivinaPar  |    |  JuegoAdivinaImpar |
+          +-------------------+    +--------------------+
+          |                   |    |                    |
+          +-------------------+    +--------------------+
+          | + validaNumero(n) |    | + validaNumero(n)  |
+          +-------------------+    +--------------------+
